@@ -25,7 +25,6 @@ library(akima)
 library(plyr)
 library(dplyr)
 library(grid)
-library(gridExtra)
 library(RColorBrewer)
 library(scales)
 
@@ -228,13 +227,13 @@ well.type<-ggplot(data=my.reads.agg, aes(x=Type, y=Reads, fill=contam)) +
   ### add a sensible y axis label
   labs(y = "% of reads per well", x="PCR wells") +
   ### rotate the x-axis labels and resize the text for the svg
-  theme(axis.text.x = element_text(size = rel(1.1), colour="black"),
+  theme(axis.text.x = element_text(size = rel(2.2), colour="black"),
         axis.ticks.x=element_blank(),
-        axis.text.y = element_text(size = rel(1.1), colour="black"),
-        axis.title.y = element_text(size = rel(1), vjust=2),
-        axis.title.x = element_text(size = rel(1), vjust=-1.3),
-        legend.text = element_text(size = rel(1), face="italic"),
-        legend.title = element_text(size = rel(1)),
+        axis.text.y = element_text(size = rel(2.2), colour="black"),
+        axis.title.y = element_text(size = rel(2), vjust=2),
+        axis.title.x = element_text(size = rel(2), vjust=-1.3),
+        legend.text = element_text(size = rel(2), face="italic"),
+        legend.title = element_text(size = rel(2)),
         strip.text.x = element_blank(),
         strip.background=element_blank(),
         legend.position = "bottom",
