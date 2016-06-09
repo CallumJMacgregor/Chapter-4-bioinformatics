@@ -14,11 +14,7 @@ j <- c("reshape2","ggplot2","akima","plyr","dplyr","grid","RColorBrewer","scales
 new.packages <- j[!(j %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
-for (i in j){
-  library(j,character.only=TRUE)
-}
- 
- 
+
 library(reshape2)
 library(ggplot2)
 library(akima)
